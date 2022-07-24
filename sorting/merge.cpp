@@ -1,7 +1,7 @@
 //
 // Created by Yunze Liao on 7/23/22.
 //
-
+// 
 #include <iostream>
 
 void merge(int A[], int p, int q, int r) {
@@ -47,7 +47,11 @@ void merge(int A[], int p, int q, int r) {
 	delete[] L;
 	delete[] R;
 }
-
+/**
+divide: A[p:r] divided to A[p:q], A[q+1:r], D(n) = O(1) since only computing the middle point
+conquer: sorting two subarrays recursively, subproblem of size n/2, 2T(n/2)
+combine: merge subarrays back, C(n) = O(n)
+**/
 void merge_sort(int A[], int p, int r) {
 	if (p >= r) // base case: only 1 element is always sorted
 		return;
@@ -57,6 +61,7 @@ void merge_sort(int A[], int p, int r) {
 	merge(A, p, q, r);
 	
 }
+
 int main() {
     int test[] = {3, 4, 1, 5, 7, 9 ,2, 10, 25, 2};
     merge_sort(test, 0, sizeof(test)/ sizeof(test[0])-1);
