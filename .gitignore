@@ -1,5 +1,7 @@
 
 sorting/CMakeLists.txt
-sorting/.idea/misc.xml
-sorting/.idea/sorting.iml
+sorting/.idea
 sorting/cmake-build-debug
+divide-and-conquer/CMakeLists.txt
+divide-and-conquer/.idea
+divide-and-conquer/cmake-build-debug
