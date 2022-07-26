@@ -23,7 +23,7 @@ void insertion_sort(int A[], int n) {
     // termination: i's value exceeds n
 }
 int main() {
-    int test[] = {3, 4, 1, 5, 7, 9 ,2, 10};
+    int test[] = {3, 4, 1, 5, 7, 9 ,2, 8};
     insertion_sort(test, 8);
     for (int i = 0; i < 8; i++) {
         printf("%d ", test[i]);
